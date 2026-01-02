@@ -14,5 +14,5 @@ spring:
         dialect: org.hibernate.dialect.MySQL8Dialect
 
 jwt:
-  secretkey: 1GXBV8gwBp790NnwuXkzHDtJdsxVvrZh
+  secretkey: 
   expiration: 3600000
