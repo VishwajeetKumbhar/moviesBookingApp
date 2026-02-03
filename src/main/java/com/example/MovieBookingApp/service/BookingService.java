@@ -9,12 +9,14 @@ import com.example.MovieBookingApp.repository.BookingRepository;
 import com.example.MovieBookingApp.repository.ShowRepository;
 import com.example.MovieBookingApp.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.time.LocalDateTime;
 import java.util.List;
 import java.util.Set;
 import java.util.stream.Collectors;
 
+@Service
 public class BookingService {
 
     @Autowired
@@ -105,10 +107,4 @@ public class BookingService {
             throw new RuntimeException("Booking Already been cancelled");
         }
     }
-
-
-
-
-
-
 }

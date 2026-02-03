@@ -1,7 +1,6 @@
 package com.example.MovieBookingApp.repository;
 
 import com.example.MovieBookingApp.entity.Booking;
-import com.example.MovieBookingApp.entity.BookingSatus;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.List;

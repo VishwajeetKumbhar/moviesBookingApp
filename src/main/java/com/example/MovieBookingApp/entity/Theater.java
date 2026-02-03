@@ -13,7 +13,7 @@ public class Theater {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String theaterName;
-    private String theaterLocation;
+    private String location;
     private Integer theaterCapacity;
     private String theaterScreenType;
 

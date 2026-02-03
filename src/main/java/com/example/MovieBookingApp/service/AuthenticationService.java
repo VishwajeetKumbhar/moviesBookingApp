@@ -1,20 +1,20 @@
 package com.example.MovieBookingApp.service;
 
+import java.util.HashSet;
+import java.util.Set;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.authentication.AuthenticationManager;
+import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
+import org.springframework.security.crypto.password.PasswordEncoder;
+import org.springframework.stereotype.Service;
+
 import com.example.MovieBookingApp.dto.LoginRequestDTO;
 import com.example.MovieBookingApp.dto.LoginResponseDTO;
 import com.example.MovieBookingApp.dto.RegisterRequestDTO;
 import com.example.MovieBookingApp.entity.User;
 import com.example.MovieBookingApp.jwt.JwtService;
 import com.example.MovieBookingApp.repository.UserRepository;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.security.authentication.AuthenticationManager;
-import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
-import org.springframework.security.crypto.password.PasswordEncoder;
-import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
-import org.springframework.stereotype.Service;
-
-import java.util.HashSet;
-import java.util.Set;
 
 @Service
 public class AuthenticationService {

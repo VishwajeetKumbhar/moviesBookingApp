@@ -18,7 +18,7 @@ public class TheaterService {
     public Theater addtheater(@RequestBody TheaterDTO theaterDTO){
         Theater theater = new Theater();
         theater.setTheaterName(theaterDTO.getTheaterName());
-        theater.setTheaterLocation(theaterDTO.getTheaterLocation());
+        theater.setLocation(theaterDTO.getTheaterLocation());
         theater.setTheaterCapacity(theaterDTO.getTheaterCapacity());
         theater.setTheaterScreenType(theaterDTO.getTheaterScreenType());
         return theaterRepository.save(theater);
@@ -34,7 +34,7 @@ public class TheaterService {
     public Theater updateTheater(Long id, TheaterDTO theaterDTO) {
         Theater theater = theaterRepository.findById(id).orElseThrow(() -> new RuntimeException("Theater Not Found for the Id"+ id));
         theater.setTheaterName(theaterDTO.getTheaterName());
-        theater.setTheaterLocation(theaterDTO.getTheaterLocation());
+        theater.setLocation(theaterDTO.getTheaterLocation());
         theater.setTheaterCapacity(theaterDTO.getTheaterCapacity());
         theater.setTheaterScreenType(theaterDTO.getTheaterScreenType());
         return theaterRepository.save(theater);
